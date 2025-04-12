@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TaskMate - To Do List App</title>
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: url('https://img.freepik.com/premium-photo/stationery-png-border-transparent-background_53876-1001667.jpg?w=1060') no-repeat center center;
+      background-size: cover;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+     
+      border-radius: 15px;
+    }
+
+    .hero {
+      text-align: right;
+      max-width: 500px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      color: #2d1e3e;
+      margin-bottom: 20px;
+      font-weight: 800;
+    }
+
+    .hero h1::before {
+      content: '📝 ';
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .cta-button {
+      padding: 15px 35px;
+      background-color: #ff5c8d;
+      color: white;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #ff3972;
+    }
+
+    .cta-button i {
+      margin-left: 10px;
+    }
+
+    footer {
+      color: #555;
+      text-align: center;
+      font-size: 1rem;
+      padding: 20px 0;
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    footer p {
+      color: #702963;
+    }
+
+    footer i {
+      color: #702963;
+      margin-right: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        padding: 30px 20px;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .cta-button {
+        width: 100%;
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="hero">
+      <h1>Welcome to DoBee🐝</h1>
+      <p><i class="fas fa-tasks"></i> Your ultimate to-do list app. Organize, manage, and track tasks easily! ✨</p>
+      <button class="cta-button" onclick="location.href= 'todo.html'">
+        Get Started <i class="fas fa-rocket"></i>
+      </button>
+    </div>
+  </div>
+
+  <footer>
+    <p><i class="far fa-copyright"></i> 2025 DoBee. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
